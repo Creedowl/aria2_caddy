@@ -1,0 +1,20 @@
+0.0.0.0:80 {
+    gzip
+    log /aria2/log/web.log
+}
+
+0.0.0.0:80/aria2 {
+    gzip
+    proxy / localhost:6800
+    log /aria2/log/aria2.log
+}
+
+0.0.0.0:80/dl {
+    gzip
+    filemanager / /aria2/dl {
+        no_auth
+        locale zh_cn
+        database /aria2/fm.db
+    }
+    log /aria2/log/dl.log
+}
