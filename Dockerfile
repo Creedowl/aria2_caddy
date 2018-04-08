@@ -7,7 +7,7 @@ RUN apk add --no-cache --update aria2 && \
         mkdir /aria2/web && \
         mkdir /aria2/log && \
         # wget http://192.168.6.235:2015/caddy && \
-        wget -O caddy.tar.gz https://caddyserver.com/download/linux/amd64?plugins=http.filemanager&license=personal && \
+        wget -O caddy.tar.gz "https://caddyserver.com/download/linux/amd64?plugins=http.filemanager&license=personal" && \
         tar -xzf caddy.tar.gz caddy && \
         mv caddy /usr/bin/ && \
         chmod +x /usr/bin/caddy && \
