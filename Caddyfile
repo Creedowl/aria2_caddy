@@ -13,7 +13,7 @@
     gzip
     filemanager / /aria2/dl {
         no_auth
-        locale zh_cn
+        locale zh-cn
         database /aria2/fm.db
     }
     log /aria2/log/dl.log

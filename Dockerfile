@@ -13,7 +13,7 @@ RUN apk add --no-cache --update aria2 && \
         chmod +x /usr/bin/caddy && \
         wget https://github.com/ziahamza/webui-aria2/archive/master.zip && \
         # wget http://192.168.6.235:2015/master.zip && \
-        unzip master.zip&& \
+        unzip master.zip && \
         rm -rf master.zip && \
         mv webui-aria2-master/* /aria2/web && \
         rm -rf webui-aria2-master
